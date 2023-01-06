@@ -261,7 +261,7 @@ header a  {
 
 .banner {
     display: flex;
-    background-image: url("C:/Projects/Company-home-page-with-flexbox/resources/images/jason-wang-NxAwryAbtIw-unsplash.jpg");
+    background-image: url("../resources/images/jason-wang-NxAwryAbtIw-unsplash.jpg");
     width: 100vw;
     background-repeat: no-repeat;
     background-size: cover;
