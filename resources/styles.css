@@ -1,0 +1,599 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    --black-olive: #3A3F39;
+    --black: #151714;
+    --blue-gray: #748686;
+    --metalic-sunburn: #d9ac3b;
+    --custom-white: #F3F3F3;
+
+}
+
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+main {
+    position: relative;
+    top: 85px;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Header Section */ 
+
+header {
+    background-color: var(--blue-gray);
+    display: flex;
+    width: 100vw;
+    position: fixed;
+    z-index: 1;
+    height: 85px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    margin: 0 2rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.85rem;
+    color: var(--black);
+    font-weight: 500;
+    border: 2px solid var(--metalic-sunburn);
+    padding: 0.3rem 0.5rem;
+    border-radius: 2px;
+}
+
+header ul li {
+    display: inline-flex;
+    position: relative;
+    padding: 0 1.5rem;
+    text-align: right;
+}
+
+header ul a:hover {
+    text-decoration: underline var(--metalic-sunburn);
+}
+
+header a:active {
+    color: var(--metalic-sunburn);
+    text-decoration: none;
+}
+
+header nav {
+    display: flex;
+    float:right;
+    text-align: right;
+    position: relative;
+    right: 3%;
+}
+
+nav ul {
+    display: inline-flex;
+    flex-wrap: nowrap;
+}
+
+header a  {
+    text-decoration: none;
+    min-width: 100px;
+    color: var(--custom-white);
+}
+
+/* Media Queries */
+
+@media only screen and  (max-width: 1039px ) {
+    a.logo {
+        font-size: 1.5rem;
+    }
+
+    header ul li {
+        display: inline-flex;
+        flex-wrap: nowrap;
+        padding: 0 1rem;
+    }
+
+   header ul {
+    display: inline-flex;
+    justify-content: space-around;
+   }
+   
+   header a {
+    min-width: 50px;
+   }
+
+   .team-container .team-member {
+    margin: 1rem;
+   }
+
+   main .work-container {
+    padding-top: 80px;
+   }
+
+   main .about-us-header {
+    padding: 80px 4rem;
+   }
+
+   main .footer {
+    margin-top: 10rem;
+   }
+
+   .team-container .team-member h3 {
+    margin: 0 0.25rem;
+   }
+
+   .team-container .team-member p {
+    margin: 0 0.25rem;
+    font-size: 0.85rem;
+   }
+
+   .team-container .team-member a {
+    margin: 0 0.25rem;
+   }
+}
+
+@media only screen and (max-width: 700px) {
+    a .logo {
+        font-size: 1.25rem;
+    }
+
+    header ul li {
+        display: inline-flex;
+        flex-wrap: nowrap;
+        padding: 0 0.5rem;
+    }
+
+    .banner h1 {
+        font-size: 1.5rem;
+        margin-right: 1rem;
+    }
+
+   main .banner button {
+    height: 30px;
+    width: 180px;
+    margin-top: 0.5rem;
+   }
+
+   main .work-container button {
+    height: 30px;
+    width: 180px;
+    margin: 0;
+   }
+
+  main .about-us-container {
+    padding: 60px 0rem;
+  }
+
+  .team-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .team-container .team-member {
+    width: 35%
+  }
+
+  .about-us-container .team-container .team-member h3 {
+    font-size: 1rem;
+    margin:  0.25rem;
+  }
+
+  .about-us-container .team-container .team-member p {
+    font-size: 0.85rem;
+    margin: 0 0.2rem;
+  }
+
+  .about-us-container .team-container .team-member a .secondary {
+    font-size: 0.65rem;
+    margin: 0 0.2rem;
+  }
+  
+  .team-container .team-member img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 533px) {
+    .work-container .gallery {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .work-container .gallery .img {
+        width: 100%;
+    }
+
+    body main footer {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-top: 5rem;
+    }
+
+    footer .footer-left , footer .footer-right {
+        width: 80%;
+    }
+
+    footer .footer-right {
+        padding: 1rem;
+        margin-top: 2rem;
+    }
+
+    footer .footer-right a {
+        font-size: 1rem;
+    }
+
+    footer footer-right ul.social-media {
+        display: inline-flex;
+    }
+
+    #logo {
+        font-size: 1rem;
+        padding-right: 0.5rem;
+        min-width: 60px;
+    }
+
+    #nav-list {
+        font-size: 12px;
+        
+    }
+
+    #nav-list li {
+        margin: 0.1rem;
+        padding: 0;
+    }
+
+    #nav-list a {
+        margin: 0;
+        padding: 0;
+    }
+
+}
+
+/* Banner Section */
+
+.banner {
+    display: flex;
+    background-image: url("C:/Projects/Company-home-page-with-flexbox/resources/images/jason-wang-NxAwryAbtIw-unsplash.jpg");
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.banner button {
+    height: 40px;
+    width: 250px;
+    background-color: var(--metalic-sunburn);
+    border-radius: 2px;
+    border: 1px solid var(--metalic-sunburn);
+    margin-top: 1rem;
+    color: var(--black-olive);
+    text-transform: uppercase;
+    font-weight: 540;
+}
+
+.banner button:hover {
+    cursor: pointer;
+    box-shadow:  5px 5px 5px var(--black) ;
+    transition: 0.5s;
+    height: 42px;
+    width: 255px;
+}
+
+.banner button:active {
+    background-color: var(--black-olive);
+    color: var(--metalic-sunburn);
+}
+
+.banner button, h1 {
+    position: relative;
+    top: 20%;
+    left: 10%;
+}
+
+.banner h1 {
+    color: var(--custom-white);
+    font-family: 'Julius Sans One', sans-serif;
+    
+}
+
+
+
+/* Our Work Section */
+
+.gallery .img {
+    max-height: 320px;
+    width: calc(100%/4);
+    padding: 0 3px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.gallery img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    min-height: 200px;
+}
+
+.gallery {
+    display: inline-flex;
+    width: 100vw;
+    justify-content: space-between;
+    position: relative;
+    left: -4px;
+    
+}
+
+.gallery-bottom {
+    background-color: var(--metalic-sunburn);
+    height: 10rem;
+    position: relative;
+    top: -4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.gallery-bottom button {
+    height: 40px;
+    width: 250px;
+    background-color: var(--black-olive);
+    border-radius: 2px;
+    border: 1px solid var(--black-olive);
+    margin-top: 1rem;
+    color: var(--custom-white);
+    text-transform: uppercase;
+    font-weight: 540;
+}
+
+.gallery-bottom button:hover {
+    cursor: pointer;
+    box-shadow:  5px 5px 5px var(--black) ;
+    transition: 0.5s;
+    height: 42px;
+    width: 255px;
+    
+}
+
+.gallery-bottom button:active {
+    background-color: var(--custom-white);
+    color: var(--metalic-sunburn);
+    border: 1px solid var(--black);
+    box-shadow: none;
+}
+
+.work-container h2 {
+    font-family: 'Julius Sans One', sans-serif;
+    text-align: center;
+    font-size:  2rem;
+    padding-bottom: 5rem;
+}
+
+.work-container {
+    padding-top: 10rem;
+}
+
+
+/* About Us Section */
+
+.about-us-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10rem 4rem;
+}
+
+.about-us-header a {
+    color: var(--metalic-sunburn);
+}
+
+.about-us-header a:hover {
+   text-decoration: none;
+}
+
+.about-us-header p {
+    text-align: center;
+    line-height: 1.5;
+    width: 40vw;
+}
+
+.about-us-header h2 {
+    font-family: 'Julius Sans One', sans-serif;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.our-team-header {
+    text-align: center;
+    position: relative;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 2rem;
+    background-color: var(--blue-gray);
+    color: var(--custom-white);
+    padding: 2rem;
+    padding-top: 5rem;
+}
+
+/* Our Team Section */
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    background-color: var(--blue-gray);
+    padding-bottom: 5rem;
+}
+
+.team-container img {
+    width: 18vw;
+    height: 18vw;
+    border-bottom: solid 2px var(--metalic-sunburn);
+    
+}
+
+.team-member {
+    width: 18vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem;
+    border: solid 2px var(--metalic-sunburn) ;
+    border-radius: 3px;
+    
+}
+
+.team-member h3, .team-member p {
+    color: var(--custom-white);
+    line-height: 1.2;
+}
+
+.team-member h3 {
+    padding: 1rem 0 0.5rem 0;
+    text-align: center;
+}
+
+.team-member p {
+    text-align: center;
+}
+
+
+.team-container .secondary {
+    height: 40px;
+    width: 150px;
+    margin-top: 0.5rem;
+    color: var(--metalic-sunburn);
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+
+ .secondary:hover {
+    color: var(--black);
+}
+
+/* Footer Section */
+
+footer {
+    background-color: var(--black-olive);
+    margin-top: 20rem;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem 0 5rem 0;
+}
+
+form {
+    color: var(--custom-white);
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-right a{
+    color: var(--custom-white);
+}
+
+.social-media a:hover {
+    text-decoration: none;
+}
+
+.social-media a:active {
+    color: var(--custom-white);
+}
+
+.footer-left {
+    width: 40%;
+    margin-left: 5%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+}
+.footer-right {
+    width: 40%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.footer-right p {
+    color: var(--custom-white);
+    display: flex;
+}
+
+.footer-right .paragraph {
+    width: 80%;
+}
+
+.footer-left h2 {
+    font-family: 'Julius Sans One', sans-serif;
+    padding: 1rem 0 2rem 0;
+    font-size: 3.5rem;
+}
+
+#submit:hover {
+    box-shadow:  5px 5px 5px var(--black) ;
+    transition: 0.5s;
+}
+
+#submit:active {
+    color: var(#d9ac3b);
+    background-color: var(--black-olive);
+    border: 1px solid var(--metalic-sunburn);
+    
+}
+
+.footer-left input , .footer-left textarea {
+    background-color: var(--black-olive);
+    color: var(--custom-white);
+    border: none;
+    border-bottom: var(--metalic-sunburn) 1px solid;
+    height: 3rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+input, textarea {
+    border: none;
+}
+
+textarea {
+    padding-top: 1rem;
+}
+
+#submit {
+    border: var(--custom-white) 1px solid;
+    margin-top: 1rem;
+    color: var(--black);
+    background-color: #d9ac3b;
+    border-radius: 3px;
+}
+
+.footer-left textarea:focus, input:focus {
+    outline: none;
+}
+.copyright {
+    position: relative;
+    bottom: 0px;
+    font-size: 12px;
+}
+
+.social-media a {
+    color: var(--metalic-sunburn);
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
+}
